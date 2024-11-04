@@ -41,9 +41,25 @@ header {
     font-style: normal;
 }
 
-.footer img{
+.footer{
 width: 100%;
+display: inline-block;
+position: relative;
 }
+
+.footer img{
+    width: 100%;
+}
+
+.footer h1{
+    position: absolute;
+    top: 400px;
+    right: 800px;
+    font-size: 40px;
+    color: #783d19;
+}
+
+
 
 @media (max-width: 768px) {
     header {
