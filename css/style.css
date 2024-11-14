@@ -1,0 +1,122 @@
+body{
+  background-color: #faedcd;
+}
+
+nav {
+    position: relative;
+  }
+  
+  .menu-hamburguer {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .menu-hamburguer  {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #faedcd;
+    margin: 5px 0;
+  }
+  
+  /* Estilos para o menu de links */
+  .menu-links {
+    display: flex; /* Mostra links na horizontal em telas grandes */
+    list-style: none;
+  }
+
+  .menu-links a {
+    text-decoration: none;
+    color: #783d19;
+  }
+  
+  .menu-links li {
+    margin-right: 90px;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    padding-top: 50px;
+    padding-bottom: 20px;
+
+}
+
+.menu-hamburguer img{
+  display: none;
+}
+
+  .logo {
+    width: 260px;
+    margin-left: 50px;
+    margin-right: 400px;
+}
+
+.footer{
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    }
+    
+    .footer img{
+        width: 100%;
+    }
+    
+    .footer h1{
+        position: absolute;
+        top: 400px;
+        right: 800px;
+        font-size: 40px;
+        color: #783d19;
+    }
+  
+  /* Estilos para telas pequenas */
+  @media (max-width: 768px) {
+    .menu-links {
+      display: none; /* Oculta o menu em telas pequenas */
+      position: absolute;
+      top: 50px;
+      left: 0;
+      background-color: #783d19;
+      width: 100%;
+      flex-direction: column;
+      padding: 10px;
+    }
+
+    .menu-hamburguer img {
+      display: block;
+      transition: transform 0.5s ease;
+    }
+    
+    .rotate {
+      transform: rotate(360deg);
+    }
+  
+    .menu-hamburguer {
+      display: block; /* Exibe o ícone de hambúrguer */
+    }
+  
+    .menu-links li {
+      margin: 10px 0;
+      align-self: center;
+    }
+  
+    .menu-links.show {
+      display: flex; /* Exibe o menu ao clicar no hambúrguer */
+    }
+
+    .logo {
+      display: none;
+    }
+
+    .menu-links a {
+      color: #faedcd;
+      
+    }
+
+    body{
+      margin: 0px;
+    }
+  }
+  
