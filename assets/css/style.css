@@ -36,7 +36,6 @@
   --mb-5: 2.5rem;
   --mb-6: 3rem;
 
-  /*========== z index ==========*/
   --z-tooltip: 10;
   --z-fixed: 100;
 }
@@ -312,9 +311,8 @@ img{
   margin-bottom: var(--mb-1);
 }
 
-.services__description{
-  padding: 0 1.5rem;
-}
+
+
 
 /*========== MENU ==========*/
 .menu__container{
@@ -333,7 +331,7 @@ img{
 }
 
 .menu__img{
-  width: 100px;
+  width: 60px;
   align-self: center;
   margin-bottom: var(--mb-2);
 }
@@ -349,10 +347,13 @@ img{
 
 .menu__detail, .menu__preci{
   font-size: var(--small-font-size);
+  margin-bottom: 15px;
 }
 
 .menu__detail{
   margin-bottom: var(--mb-1);
+  position: relative;
+  margin-right: 40px;
 }
 
 .menu__button{
